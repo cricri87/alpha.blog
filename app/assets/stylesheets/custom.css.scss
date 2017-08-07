@@ -5,12 +5,16 @@ $navbar-default-bg: #0000CD	;
 @import "bootstrap";
 
 #logo {
-  float: left;
+  margin-left: 500px;
   font-size: 1.7em;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: -1px;
   font-weight: bold;
+}
+
+.navbar-nav li{
+  color: red;
 }
 
 #logo:hover {
@@ -31,10 +35,7 @@ $navbar-default-bg: #0000CD	;
   margin-top: 0;
 }
 
-.new-article {
-  text-align: center;
-  margin-bottom: 10px;
-}
+
 
 .article-title {
   font-weight: bold;
@@ -45,6 +46,13 @@ $navbar-default-bg: #0000CD	;
   border-top: 1px solid #eaeaea;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.links li{
+  margin-top: 20px;
+  margin-right: 20px;
+  display: inline-block;
+
 }
 
 footer {

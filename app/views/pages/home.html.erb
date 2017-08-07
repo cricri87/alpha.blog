@@ -17,7 +17,17 @@
       <h1>Alpha Blog</h1>
 
     <%= link_to "sign up now", "#", class: "btn btn-primary btn-xlarge" %>
-    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="links">
+        <li><%= link_to "New article", new_article_path, class: "btn btn-sm btn-primary" %></li>
+        <li><%= link_to "All article", articles_path, class: "btn btn-sm btn-primary" %></li>
+
+
+      </ul>
+
+
+    </div>
+
   </div>
     <!--<%= link_to image_tag('picture_1.jpg'), 'https://www.pexels.com/photo/scenic-view-of-mountains-against-sky-during-sunset-488464/' %>
     -->
