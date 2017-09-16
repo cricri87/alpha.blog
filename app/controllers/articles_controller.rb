@@ -17,7 +17,7 @@ end
 
   def create
     @article = Article.new(article_params)
-    @article.user = User.first #This is hardcoded so i can save the article, will change this later
+    @article.user = current_user
     if @article.save
       flash[:success] = "Article was successfully created"
       redirect_to article_path(@article)
@@ -57,6 +57,6 @@ end
     if current_user != @article.user
       flash[:danger] = "You can only edit or delete your own articles"
       redirect_to root_path
-    end 
+    end
   end
 end
